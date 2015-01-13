@@ -18,4 +18,4 @@ do
     break
   fi
 done
-docker -H unix:///docker.sock run --rm -it --name marathon -e LIBPROCESS_PORT=9090 -p 8080:8080 -p 9090:9090 mesosphere/marathon:v0.7.5 --master zk://$ZK:2181/mesos --zk zk://$ZK:2181/marathon --checkpoint --task_launch_timeout 300000
+docker -H unix:///docker.sock run --rm -i --name marathon -e LIBPROCESS_PORT=9090 -p 8080:8080 -p 9090:9090 mesosphere/marathon:v0.7.5 --master zk://$ZK:2181/mesos --zk zk://$ZK:2181/marathon --checkpoint --task_launch_timeout 300000
