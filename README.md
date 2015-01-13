@@ -1,1 +1,1 @@
-Mesos container that gets its zookeeper instance from consul
+Marathon container that gets its zookeeper instance from consul
